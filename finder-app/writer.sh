@@ -12,7 +12,7 @@ directory=$(dirname "$writefile")
 mkdir -p "$directory"
 echo "$writestr" > "$writefile"
 
-if [ $? -ne 0]; then
+if [ $? -ne 0 ]; then
   echo "File creation error"
   exit 1
 fi
